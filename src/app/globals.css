@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+:root {
+  --bg-app: #0b0d10;
+  --bg-sidebar: #11151a;
+  --bg-panel: #151a1e;
+  --bg-stage: #0a0f12;
+  --bg-accent-soft: #0a2e24;
+  --bg-nav-active: #1a1f24;
+  --border: #1f242b;
+  --border-strong: #2a313a;
+  --text: #f4f6f8;
+  --text-muted: #8b949e;
+  --text-faint: #5a6a72;
+  --accent: #00c48a;
+  --accent-ink: #0e1518;
+  --editor-bg: #1a1a1a;
+  --editor-panel: #181818;
+  --editor-chrome: #121212;
+}
+
+@theme inline {
+  --color-bg-app: var(--bg-app);
+  --color-bg-sidebar: var(--bg-sidebar);
+  --color-bg-panel: var(--bg-panel);
+  --color-bg-stage: var(--bg-stage);
+  --color-bg-accent-soft: var(--bg-accent-soft);
+  --color-bg-nav-active: var(--bg-nav-active);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-text: var(--text);
+  --color-text-muted: var(--text-muted);
+  --color-text-faint: var(--text-faint);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-editor-bg: var(--editor-bg);
+  --color-editor-panel: var(--editor-panel);
+  --color-editor-chrome: var(--editor-chrome);
+  --font-sans: var(--font-dm-sans);
+  --font-brand: var(--font-syne);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--bg-app);
+  color: var(--text);
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+}
+
+.font-brand {
+  font-family: var(--font-syne), system-ui, sans-serif;
+}
+
+/* Filmstrip scrubber */
+.filmstrip-track {
+  background: linear-gradient(
+    90deg,
+    #3a454d,
+    #2a343c 20%,
+    #4a5560 40%,
+    #2e3840 60%,
+    #3d4852 80%,
+    #3a454d
+  );
+}
+
+.preview-gradient {
+  background: linear-gradient(180deg, #2a3238, #0a0f12);
+}
